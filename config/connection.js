@@ -1,31 +1,32 @@
 //bring in mysql
 var mysql = require("mysql");
 
-// var connection;
-// //seems like heroku problem is here
-// if (process.env.JAWSDB_URL) {
-//   connection = mysql.createConnection(process.env.JAWSDB_URL);
-// } else {
-//   connection = mysql.createConnection({
-//     host: 'localhost',
-//     user: 'root',
-//     password: '',
-//     database: 'tasks_db'
-//   });
-// };
+var connection;
+if(process.env.JAWSDB_URL) {
+  //Heroku deployment
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  //local host
+    connection = mysql.createConnection({
+        host: "localhost",
+        user: "root",
+        password: "",
+        database: "task_db",
+    });
+};
 
-// connect to localhost
-var connection = mysql.createConnection({
-  host: "localhost",
-  port: 3306,
+// // connect to localhost
+// var connection = mysql.createConnection({
+//   host: "localhost",
+//   port: 3306,
 
-  // Your username
-  user: "root",
+//   // Your username
+//   user: "root",
 
-  // Your password
-  password: "",
-  database: "task_db"
-});
+//   // Your password
+//   password: "",
+//   database: "task_db"
+// });
 
 connection.connect(function (err) {
   if (err) throw err;
