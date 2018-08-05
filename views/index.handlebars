@@ -1,0 +1,30 @@
+<div class="center title">
+<h1>To Do to Done!</h1>
+</div>
+
+
+<div class="row middle">
+  <div class="col center" id="notDevoured">
+    <h2>Task to be completed!</h2>
+    {{burgers.id}}{{#each burgers}} {{#unless devoured}} {{> burgers/burger-block devoured=true}} {{/unless}} {{/each}}
+  </div>
+
+  <div class="col center" id="Devoured">
+    <h2>Tasks Completed!</h2>
+    {{#each burgers}} {{#if devoured}} {{> burgers/burger-block devoured=false}} {{/if}} {{/each}}
+  </div>
+</div>
+
+<div class="center bottom">
+<h2>Add a Task</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="bg">To do:</label>
+    <input type="text" id="bg" name="name" class="box">
+  </div>
+
+
+  <button class="btn btn-light no-pad" type="submit">Add Now</button>
+</form>
+</div>

@@ -1,0 +1,66 @@
+li {
+  padding: 5px;
+  margin: 5px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.center {
+  text-align: center;
+}
+
+.title {
+  background-image: url("../img/writing-sationary_4460x4460.jpg");
+  background-size: cover;
+  padding: 155px;
+  color: rgb(248, 248, 248);
+  font-family: 'Homemade Apple', cursive;
+  border-bottom: 2px dashed white;
+}
+
+.middle {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  border-bottom: 2px dashed white;
+}
+
+.bottom {
+  padding: 30px 15px 100px 15px;
+  background-color: grey;
+  color: black;
+  margin-bottom: 0;
+}
+
+.no-pad {
+  padding: 0;
+}
+
+.box {
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-family: 'Homemade Apple', cursive;
+  padding-bottom: 10px;
+}
+
+h6 {
+  color: grey;
+}
